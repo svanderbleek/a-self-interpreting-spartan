@@ -9,6 +9,11 @@ Bonuses, express Univalence compile, prove correctness, compile to typed web-ass
 * Just write the parser https://tiarkrompf.github.io/notes/?/just-write-the-parser/aside1
 * Post Modern Compiler Design https://www.cs.purdue.edu/homes/rompf/pmca/vol1/
 
+## Spartan Type Theory
+
+* https://github.com/andrejbauer/spartan-type-theory
+* https://github.com/MaiaVictor/calculus-of-constructions
+
 ## Rewriting
 
 * Algebra in my browser https://www.youtube.com/watch?v=S2OEPFbsl50
@@ -29,9 +34,7 @@ ReplaceAll [Object, [Rules]]
 
 * https://crypto.stanford.edu/~blynn/lambda/
 
-## Spartan Type Theory
 
-* https://github.com/andrejbauer/spartan-type-theory
 
 # Advanced
 

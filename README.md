@@ -46,3 +46,9 @@ ReplaceAll [Object, [Rules]]
 ## Weird
 
 * Fully Automated HTML and Javascript Rewriting for Constructing a Self-healing Web Proxy https://arxiv.org/pdf/1803.08725.pdf
+
+## Quantifier Elimination
+
+* Computation-Oriented Reductions of Predicate to Propositional Logic
+
+## Unification

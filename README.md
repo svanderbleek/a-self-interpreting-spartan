@@ -42,3 +42,7 @@ ReplaceAll [Object, [Rules]]
 ## Proof Carrying Code
 
 * https://www.cs.princeton.edu/~appel/papers/pccmodel.pdf
+
+## Weird
+
+* Fully Automated HTML and Javascript Rewriting for Constructing a Self-healing Web Proxy https://arxiv.org/pdf/1803.08725.pdf

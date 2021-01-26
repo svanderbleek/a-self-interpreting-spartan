@@ -1,8 +1,12 @@
 # A Self Interpreting Spartan
 
-Implement a minimal type theory and use it to build a self interpreter.
+Implement a minimal type theory and use it to build a self interpreter. Try and use closure calculus and embed in javascript as metatheory.
 
 Bonus, express Univalence.
+
+## Closure Calculus
+
+* Closure Calculus https://blog.chewxy.com/wp-content/uploads/personal/dissertation31482.pdf
 
 ## Self Interpreters in Lambda Calculus
 

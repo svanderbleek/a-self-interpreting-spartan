@@ -33,10 +33,12 @@ ReplaceAll [Object, [Rules]]
 
 * https://github.com/andrejbauer/spartan-type-theory
 
+# Advanced
+
 ## Univalance
 
 * A self contained and brief formulation of https://arxiv.org/pdf/1803.02294.pdf
 
-## Correctness
+## Proof Carrying Code
 
 * https://www.cs.princeton.edu/~appel/papers/pccmodel.pdf

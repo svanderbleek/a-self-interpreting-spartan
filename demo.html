@@ -2,16 +2,17 @@
   <script>
     let rewrite = (expression, rule) => expression[Object.keys(rule)[0]] = Object.values(rule)[0]
 
-    let demo = {expression1: {}}
+    let one = {expression1: {}}
     let one_two = {expression1: {expression2: {}}}
+    let two = {expression2: {}}
 
-    console.log("with demo")
-    console.log(demo)
+    console.log("with one")
+    console.log(one)
     console.log("and one_two")
     console.log(one_two)
-    console.log("then rewrite demo one_two")
-    console.log(rewrite({expression1: {}}, {expression1: {expresssion2: {}}}))
-    console.log("expected")
-    console.log({expression2: {}})
+    console.log("then by rewrite(one, one_two)")
+    console.log(rewrite(one, one_two)
+    console.log("expect two")
+    console.log(two)
   </script>
 </html>

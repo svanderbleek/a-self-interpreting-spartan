@@ -9,6 +9,10 @@ Bonus, express Univalence.
 * Just write the parser https://tiarkrompf.github.io/notes/?/just-write-the-parser/aside1
 * Post Modern Compiler Design https://www.cs.purdue.edu/homes/rompf/pmca/vol1/
 
+## Rewriting
+
+* Algebra in my browser https://www.youtube.com/watch?v=S2OEPFbsl50
+
 ## JavaScript metatheory
 
 * mechanized metatheory for the mases https://repository.upenn.edu/cgi/viewcontent.cgi?article=1248&context=cis_papers

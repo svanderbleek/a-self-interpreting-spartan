@@ -52,3 +52,7 @@ ReplaceAll [Object, [Rules]]
 * Computation-Oriented Reductions of Predicate to Propositional Logic
 
 ## Unification
+
+## Compiling
+
+* An Architecture for Analysis https://sites.cs.ucsb.edu/~jmcmahan/research/top_picks_18.pdf

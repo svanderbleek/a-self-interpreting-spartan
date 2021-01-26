@@ -16,12 +16,14 @@ Bonuses, express Univalence compile, prove correctness, compile to typed web-ass
 
 ## Rewriting
 
+* javascript term rewriting https://github.com/fbreuer/rewritr
 * Algebra in my browser https://www.youtube.com/watch?v=S2OEPFbsl50
 
 ```
 ReplaceAll [Object, [Rules]]
 ```
 
+* lisp mathematica https://dl.acm.org/doi/abs/10.1145/1089419.1089421?download=true
 * Computing with Rewrite Systems https://core.ac.uk/download/pdf/82345385.pdf
 
 ## JavaScript metatheory

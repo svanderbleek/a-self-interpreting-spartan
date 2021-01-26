@@ -2,7 +2,7 @@
 
 Implement a minimal type theory and use it to build a self interpreter. Try and use closure calculus and embed in javascript as metatheory.
 
-Bonus, express Univalence.
+Bonuses, express Univalence compile, prove correctness, compile to typed web-assembly.
 
 ## Parser
 
@@ -16,7 +16,6 @@ Bonus, express Univalence.
 ## JavaScript metatheory
 
 * mechanized metatheory for the mases https://repository.upenn.edu/cgi/viewcontent.cgi?article=1248&context=cis_papers
-
 * closure calculus? https://dl.acm.org/doi/10.1145/3294032.3294085
 * binders and alpha for free?
 
@@ -31,3 +30,7 @@ Bonus, express Univalence.
 ## Univalance
 
 * A self contained and brief formulation of https://arxiv.org/pdf/1803.02294.pdf
+
+## Correctness
+
+* https://www.cs.princeton.edu/~appel/papers/pccmodel.pdf

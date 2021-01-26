@@ -6,11 +6,16 @@ Bonus, express Univalence.
 
 ## Parser
 
-*
+* Just write the parser https://tiarkrompf.github.io/notes/?/just-write-the-parser/aside1
+* Post Modern Compiler Design https://www.cs.purdue.edu/homes/rompf/pmca/vol1/
 
 ## Closure Calculus
 
 * Closure Calculus https://blog.chewxy.com/wp-content/uploads/personal/dissertation31482.pdf
+
+## JavaScript metatheory
+
+* binders and alpha for free?
 
 ## Self Interpreters in Lambda Calculus
 

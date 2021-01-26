@@ -13,6 +13,10 @@ Bonuses, express Univalence compile, prove correctness, compile to typed web-ass
 
 * Algebra in my browser https://www.youtube.com/watch?v=S2OEPFbsl50
 
+```
+ReplaceAll [Object, [Rules]]
+```
+
 ## JavaScript metatheory
 
 * mechanized metatheory for the mases https://repository.upenn.edu/cgi/viewcontent.cgi?article=1248&context=cis_papers

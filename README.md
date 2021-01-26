@@ -35,7 +35,7 @@ Expression
 Rewrite
 
 ```
-rewrite({Expression1:{}}, {Expression1: {Expression2: {}}) == {Expression2:{}}
+replace({Expression1:{}}, {Expression1: {Expression2: {}}) == {Expression2:{}}
 ```
 
 * Computing with Rewrite Systems https://core.ac.uk/download/pdf/82345385.pdf

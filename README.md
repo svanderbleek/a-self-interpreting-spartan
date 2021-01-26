@@ -24,6 +24,20 @@ ReplaceAll [Object, [Rules]]
 ```
 
 * lisp mathematica https://dl.acm.org/doi/abs/10.1145/1089419.1089421?download=true
+* matematica evaluation https://reference.wolfram.com/language/tutorial/EvaluationOfExpressionsOverview.html
+
+Expression
+
+```
+{Expression:{}}
+```
+
+Rewrite
+
+```
+rewrite({Expression1:{}}, {Expression1: {Expression2: {}}) == {Expression2:{}}
+```
+
 * Computing with Rewrite Systems https://core.ac.uk/download/pdf/82345385.pdf
 
 ## JavaScript metatheory

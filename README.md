@@ -4,6 +4,10 @@ Implement a minimal type theory and use it to build a self interpreter. Try and 
 
 Bonus, express Univalence.
 
+## Parser
+
+*
+
 ## Closure Calculus
 
 * Closure Calculus https://blog.chewxy.com/wp-content/uploads/personal/dissertation31482.pdf

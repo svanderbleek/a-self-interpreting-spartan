@@ -11,7 +11,9 @@ Bonus, express Univalence.
 
 ## JavaScript metatheory
 
-* closure calculus?
+* mechanized metatheory for the mases https://repository.upenn.edu/cgi/viewcontent.cgi?article=1248&context=cis_papers
+
+* closure calculus? https://dl.acm.org/doi/10.1145/3294032.3294085
 * binders and alpha for free?
 
 ## Self Interpreters in Lambda Calculus

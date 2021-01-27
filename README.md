@@ -4,6 +4,16 @@ Implement a minimal type theory and use it to build a self interpreter. Try to e
 
 Bonuses, express Univalence compile, prove correctness, compile to typed web-assembly.
 
+## Rwrr
+
+We will implement Rwrr a javascript rewriting interpreter. The API is minimal.
+
+```
+match(expression, rule) 
+rewrite(expression, rule)
+evaluate(expression, environment)
+```
+
 ## Parser
 
 * Just write the parser https://tiarkrompf.github.io/notes/?/just-write-the-parser/aside1

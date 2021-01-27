@@ -30,6 +30,10 @@ We will use simple tools to define a basic extensible parser implemented in Rwrr
 * https://github.com/andrejbauer/spartan-type-theory
 * https://github.com/MaiaVictor/calculus-of-constructions
 
+## Thoerem Proving
+
+* Term rewriting and beyond — theorem proving in Isabelle
+
 ## Rewriting
 
 * javascript term rewriting https://github.com/fbreuer/rewritr
@@ -97,3 +101,7 @@ theory
 ## Compiling
 
 * An Architecture for Analysis https://sites.cs.ucsb.edu/~jmcmahan/research/top_picks_18.pdf
+
+## Redex
+
+* https://github.com/racket/redex

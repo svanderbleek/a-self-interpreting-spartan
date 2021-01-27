@@ -1,18 +1,27 @@
 <html>
+  <body>
+    <h2>Output</h2>
+    <p id="output"></p>
+  </body>
+
   <script>
-    let rewrite = (expression, rule) => expression[Object.keys(rule)[0]] = Object.values(rule)[0]
+   console.log("script")
+   let output = document.getElementById("output")
+   output.log = (text) => output.innerHTML = JSON.stringify(text)
 
-    let one = {expression1: {}}
-    let one_two = {expression1: {expression2: {}}}
-    let two = {expression2: {}}
+   let rewrite = (expression, rule) => expression[Object.keys(rule)[0]] = Object.values(rule)[0]
 
-    console.log("with one")
-    console.log(one)
-    console.log("and one_two")
-    console.log(one_two)
-    console.log("then by rewrite(one, one_two)")
-    console.log(rewrite(one, one_two)
-    console.log("expect two")
-    console.log(two)
+   let one = {expression1: {}}
+   let one_two = {expression1: {expression2: {}}}
+   let two = {expression2: {}}
+
+   output.log("with one")
+   output.log(one)
+   output.log("and one_two")
+   output.log(one_two)
+   output.log("then by rewrite(one, one_two)")
+   output.log(rewrite(one, one_two))
+   output.log("expect two")
+   output.log(two)
   </script>
 </html>

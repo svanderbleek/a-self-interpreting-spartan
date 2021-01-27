@@ -1,6 +1,6 @@
 # A Self Interpreting Spartan
 
-Implement a minimal type theory and use it to build a self interpreter. Try and use closure calculus and embed in javascript as metatheory.
+Implement a minimal type theory and use it to build a self interpreter. Try to embed terms in JSON objects with javascript closure metatheory.
 
 Bonuses, express Univalence compile, prove correctness, compile to typed web-assembly.
 

@@ -1,45 +1,47 @@
 <html>
   <body>
+    <textarea id="demo" class="view"></textarea>
     <h2>repl</h2>
     <label for="output">out:</label>
-    <textarea id="output" style="width: 40em; height: 20em"></textarea>
+    <textarea id="output" class="view"></textarea>
     <br>
     <label for="input">in:</label>
     <input id="input" type="text">
   </body>
 
-  <script>
-    let output = document.getElementById("output")
-    output.log = (text) => output.innerHTML += JSON.stringify(text) + "\n"
+  <style>
+   .view { display: block; width: 100%; }
+  </style>
 
-    let rewrite = (expression, rules) => {
-      let rewrites = {}
-      for([a, b] of Object.entries(rules)) if(expression[a]) rewrites[a] = b
-      return Object.assign(expression, rewrites)
+  <script>
+    let demo = document.getElementById("demo")
+
+    let output = document.getElementById("output")
+    output.log = (text) => {
+      console.log(text)
+      output.innerHTML += JSON.stringify(text) + "\n"
     }
 
-    let one = {expression1:{}}
-    let one_two = {expression1:{expression2:{}}}
-    let two = {expression2:{}}
-    output.log("with one")
-    output.log(one)
-    output.log("and one_two")
-    output.log(one_two)
-    output.log("then by rewrite(one, one_two)")
-    output.log(rewrite(one, one_two))
-    output.log("expect two")
-    output.log(two)
+    let input = document.getElementById("input")
+    input.addEventListener("input", (e) => output.log(eval(e.target.value)))
 
-    output.log("nop")
-    output.log(rewrite(one,{}))
-    output.log("nested")
-    output.log(rewrite({expression:{expression1:{}}}))
-    output.log("none")
-    output.log(rewrite(one, one))
+    const left = (rule) => eval(Object.keys(rule)[0])
+    const right = (rule) => Object.values(rule
+    const spine = (expression) => Object.keys(expression)[0]
 
-    let wiki.exp = {a:{},b:{},c:{}}
-    wiki.rules = {a:{b:{}},b:{a:{}},a:{c:{}},b:{c:{}}}
-    output.log("wiki")
-    output.log(rewrite(wixi.exp, wikilrules))
+    const rewrite = (expression, rule) => {
+      for(term in expression) {
+        if(term in left(rule)) {
+          delete expression[term]
+          expression[left(rule)] = right(rule)
+        } else {
+          expression[term] = rewrite(expression[term], rule)
+        }
+      }
+      return expression
+    }
+
+    let f_exp = rewrite({f:{x:{},x:{}}}, {"{f:{x:{},x:{}}}":{x:{}}})
+    console.assert(f_exp == {x:{}}, f_exp)
   </script>
 </html>

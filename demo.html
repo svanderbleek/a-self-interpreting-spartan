@@ -1,27 +1,43 @@
 <html>
   <body>
-    <h2>Output</h2>
-    <p id="output"></p>
+    <h2>Repl</h2>
+    <label for="input">in:</label>
+    <input id="input" type="text">
+    <label for="output">out:</label>
+    <textarea id="output" style="width: 40em; height: 20em"></textarea>
   </body>
 
   <script>
-   console.log("script")
-   let output = document.getElementById("output")
-   output.log = (text) => output.innerHTML = JSON.stringify(text)
+    let output = document.getElementById("output")
+    output.log = (text) => output.innerHTML += JSON.stringify(text) + "\n"
 
-   let rewrite = (expression, rule) => expression[Object.keys(rule)[0]] = Object.values(rule)[0]
+    let rewrite = (expression, rule) => expression[Object.keys(rule)[0]] = Object.values(rule)[0]
 
-   let one = {expression1: {}}
-   let one_two = {expression1: {expression2: {}}}
-   let two = {expression2: {}}
+    let one = {expression1: {}}
+    let one_two = {expression1: {expression2: {}}}
+    let two = {expression2: {}}
+    output.log("with one")
+    output.log(one)
+    output.log("and one_two")
+    output.log(one_two)
+    output.log("then by rewrite(one, one_two)")
+    output.log(rewrite(one, one_two))
+    output.log("expect two")
+    output.log(two)
 
-   output.log("with one")
-   output.log(one)
-   output.log("and one_two")
-   output.log(one_two)
-   output.log("then by rewrite(one, one_two)")
-   output.log(rewrite(one, one_two))
-   output.log("expect two")
-   output.log(two)
+    let nested = {expression: {expression1: {}}}
+
+    let flatten = (tree, expression) =>
+      Object.keys(tree)[0] == Object.keys(expression)
+
+
+    output.log("with f_exp")
+    output.log(f_exp)
+    output.log("and f_op")
+    output.log(f_op)
+    output.log("then by flat.flatten(f_exp)")
+    output.log(flat.flatten(f_exp))
+    output.log("expect f_flat")
+    output.log(f_flat)
   </script>
 </html>

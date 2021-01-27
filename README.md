@@ -14,7 +14,13 @@ rewrite(expression, rule)
 evaluate(expression, environment)
 ```
 
+It is inspired by mathematica and TRS presented in literature such as Term Rewriting Systems and Advanced Topics in Term Rewriting.
+
+Rwrrr implements a rewriting logic and type checking ideas can be ported through this logic.
+
 ## Parser
+
+We will use simple tools to define a basic extensible parser implemented in Rwrr.
 
 * Just write the parser https://tiarkrompf.github.io/notes/?/just-write-the-parser/aside1
 * Post Modern Compiler Design https://www.cs.purdue.edu/homes/rompf/pmca/vol1/

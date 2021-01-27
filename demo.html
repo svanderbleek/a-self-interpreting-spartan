@@ -1,21 +1,26 @@
 <html>
   <body>
-    <h2>Repl</h2>
-    <label for="input">in:</label>
-    <input id="input" type="text">
+    <h2>repl</h2>
     <label for="output">out:</label>
     <textarea id="output" style="width: 40em; height: 20em"></textarea>
+    <br>
+    <label for="input">in:</label>
+    <input id="input" type="text">
   </body>
 
   <script>
     let output = document.getElementById("output")
     output.log = (text) => output.innerHTML += JSON.stringify(text) + "\n"
 
-    let rewrite = (expression, rule) => expression[Object.keys(rule)[0]] = Object.values(rule)[0]
+    let rewrite = (expression, rules) => {
+      let rewrites = {}
+      for([a, b] of Object.entries(rules)) if(expression[a]) rewrites[a] = b
+      return Object.assign(expression, rewrites)
+    }
 
-    let one = {expression1: {}}
-    let one_two = {expression1: {expression2: {}}}
-    let two = {expression2: {}}
+    let one = {expression1:{}}
+    let one_two = {expression1:{expression2:{}}}
+    let two = {expression2:{}}
     output.log("with one")
     output.log(one)
     output.log("and one_two")
@@ -25,19 +30,16 @@
     output.log("expect two")
     output.log(two)
 
-    let nested = {expression: {expression1: {}}}
+    output.log("nop")
+    output.log(rewrite(one,{}))
+    output.log("nested")
+    output.log(rewrite({expression:{expression1:{}}}))
+    output.log("none")
+    output.log(rewrite(one, one))
 
-    let flatten = (tree, expression) =>
-      Object.keys(tree)[0] == Object.keys(expression)
-
-
-    output.log("with f_exp")
-    output.log(f_exp)
-    output.log("and f_op")
-    output.log(f_op)
-    output.log("then by flat.flatten(f_exp)")
-    output.log(flat.flatten(f_exp))
-    output.log("expect f_flat")
-    output.log(f_flat)
+    let wiki.exp = {a:{},b:{},c:{}}
+    wiki.rules = {a:{b:{}},b:{a:{}},a:{c:{}},b:{c:{}}}
+    output.log("wiki")
+    output.log(rewrite(wixi.exp, wikilrules))
   </script>
 </html>

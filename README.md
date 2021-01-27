@@ -38,6 +38,12 @@ Rewrite
 replace({Expression1:{}}, {Expression1: {Expression2: {}}) == {Expression2:{}}
 ```
 
+should implement what is needed for
+
+* Simulation of Turing machines by a regular rewrite rule
+
+theory
+
 * Computing with Rewrite Systems https://core.ac.uk/download/pdf/82345385.pdf
 
 ## JavaScript metatheory

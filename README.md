@@ -25,3 +25,8 @@ Implement a minimal type theory and use it to build a self interpreter. Explore 
 ## Proof Carrying Code
 
 * https://www.cs.princeton.edu/~appel/papers/pccmodel.pdf
+
+## Logics
+
+* twelf https://www.cs.mcgill.ca/~bpientka/papers/system-description.pdf
+* beluga http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=29269678D8343E65BEE37B926977B2C1?doi=10.1.1.43.4232&rep=rep1&type=pdf
